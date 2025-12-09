@@ -10,7 +10,7 @@ const participants = [
     "Samarie",
     "Felix",
     "Yenelis",
-    "ELba",
+    "Elba",
     "Cecilio",
     "Enid",
     "Bob",
