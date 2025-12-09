@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Secret Santa</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/global.css">
+        <link rel="stylesheet" href="./styles/form.css">
+    </head>
+    <body>
+        <main id="form">
+            <div id="username" class="slide show">
+                <div id="username-header">
+                    <span class="display">Secret Santa</span>
+                    <span class="title">2025</span>
+                </div>
+                <span class="heading">Hola! Bienvenido...</span>
+                <p>
+                    Esta pagina se usará para eviar los wishlists y asignar su 
+                    recipiente. Tenga en mente las reglas:
+                </p>
+                <ol>
+                    <li>Los pedidos deben de ser de $20 o menos</li>
+                    <li>Se escogerá uno de los pedidos para regalar</li>
+                    <li>Diviertanse!</li>
+                </ol>
+                <div id="username-body">
+                    <span>Para empezar-- cuál es su nombre?</span>
+                    <div class="select">
+                        <select id="username-select">
+                            <option value="" disabled selected hidden>-- Seleccióne --</option>
+                            <!-- DYNAMIC GENERATED LIST -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="wishlist" class="slide">
+                <span class="heading">Falta su wishlist!</span>
+                <span>Por favor llene el formulario...</span>
+                <div id="wishlist-form">
+                    <div id="wishlist-form-heading">
+                        <span class="subheading">Wishlist:</span>
+                        <button onclick="addItem()">Añadir Producto</button>
+                    </div>
+                    <div id="wishlist-form-items">
+                        <!-- DYNAMICALLY ADD ITEMS TO ITEM LIST -->
+                    </div>
+                </div>
+                <button id="wishlist-submit" onclick="submit()">Sobmeter</button>
+            </div>
+            <div id="assignment" class="slide">
+                <div>
+                    <span class="subheading">Está asignado a:</span>
+                    <span id="assignment-name"><!-- DYNAMICALLY ADD NAME BASED ON CHOICE IN USERNAME --></span>
+                </div>
+                <span class="heading">El wishlist</span>
+                <div id="assignment-wishlist">
+                    <!-- DYNAMICALLY GENERATE LIST OF ITEMS -->
+                </div>
+            </div>
+        </main>
+        <script src="./source/hashtable.js"></script>
+        <script src="./source/form.js"></script>
+    </body>
+</html>

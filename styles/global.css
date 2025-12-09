@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lavishly+Yours&family=Open+Sans:ital,wdth,wght@0,90,300..800;1,90,300..800&display=swap');
+
+:root {
+    --green: #61E786;
+    --red: #A63446;
+    --gold: #F2C14E;
+    --black: #292815;
+    --white: #DBEBE6;
+    --gray: #BAC7BF;
+}
+
+*:not(html, body), *:before, *:after {
+    box-sizing: border-box;
+    scrollbar-gutter: stable;
+}
+
+html {
+    line-height: 1.15;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: red;
+    background-image: linear-gradient(
+        45deg,
+        var(--white) 25%,
+        transparent 25.5%,
+        transparent 50%,
+        var(--white) 50.5%,
+        var(--white) 75%,
+        transparent 75.5%,
+        transparent
+    );
+    background-size: 100px 100px;
+    color: var(--black);
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 90;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+figure {
+    margin: 0;
+    overflow: hidden;
+}
+
+button {
+    width: fit-content;
+    height: fit-content;
+    font-family: inherit;
+    font-size: 0.7rem;
+    font-weight: 500;
+    position: relative;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2000px;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background-color: var(--white);
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+button:hover::after {
+    opacity: 0.2;
+}
+
+button:active::after {
+    opacity: 0.1;
+}
+
+a {
+    text-decoration: none;
+    color: var(--green);
+}
+
+.display {
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+}
+
+.title {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.75rem;
+}
+
+.heading {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.subheading {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    opacity: 0.8;
+}

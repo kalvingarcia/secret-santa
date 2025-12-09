@@ -1,0 +1,127 @@
+#form {
+    position: fixed;
+    border: 5px green dotted;
+    border-radius: 20px;
+    width: 80%;
+    height: 80%;
+    max-width: 1000px;
+    max-height: 800px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.slide {
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.slide.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#username-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    -webkit-text-stroke-width: 1px; /* Outline width */
+    -webkit-text-stroke-color: var(--red); /* Outline color */
+}
+
+#username-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* select starting stylings ------------------------------*/
+.select {
+    font-family: inherit;
+    position: relative;
+}
+
+select {
+    position: relative;
+    font-family: inherit;
+    background-color: transparent;
+    padding: 10px 10px 10px 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 2px solid var(--black);
+}
+
+/* Remove focus */
+select:focus {
+    outline: none;
+    border: 2px dotted var(--green);
+}
+
+/* Use custom arrow */
+.select select {
+    appearance: none;
+    -webkit-appearance: none;
+    color: gray;
+}
+
+#wishlist-submit {
+    align-self: flex-end;
+}
+
+#wishlist-form-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#wishlist-form-items {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wishlist-form-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--gray);
+    border-radius: 20px;
+}
+
+input[type="text"], textarea {
+    font-family: inherit;
+    border: none;
+    border-radius: 0;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+#assignment-wishlist {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
