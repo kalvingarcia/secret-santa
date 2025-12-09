@@ -26,7 +26,7 @@ const CHRISTMAS_DATE = 25122025;
  *  @returns {number} The generated hash value.
  */
 function djb2(str) {
-    let hash = 3; // Initial hash value (seed)
+    let hash = CHRISTMAS_DATE; // Initial hash value (seed)
     for (let i = 0; i < str.length; i++) {
         // hash * 33 + char_code_at(i)
         hash = ((hash << 5) + hash) + str.charCodeAt(i);
