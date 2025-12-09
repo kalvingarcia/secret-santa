@@ -1,17 +1,22 @@
 const participants = [
     "Corali",
-    "Marie",
-    "Enid",
+    "Joel",
     "Joelli",
+    "Paul",
+    "Kalvin",
+    "Samantha",
+    "Marie",
+    "Santos",
     "Samarie",
-    "Elba",
+    "Felix",
+    "Yenelis",
+    "ELba",
     "Cecilio",
+    "Enid",
     "Bob",
     "Francis",
-    "Paul",
-    "Joel",
-    "Kalvin",
-    "Samantha"
+    "Yeida",
+    "Orlando"
 ];
 
 const CHRISTMAS_DATE = 25122025;
